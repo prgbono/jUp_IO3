@@ -1,0 +1,127 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="back()">
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Mis reservas</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="logOut()">
+        <ion-icon ios="ios-log-out" md="md-log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <!--Obviously this should be ...
+  <ion-item *ngFor="let item of items" (click)="buttonClick()">
+    <itemComponent></itemComponent>
+  </ion-item>-->
+
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item (click)="buttonClick()">
+        <h2>EADS Barcelona</h2>
+        <h3>Janssen</h3>
+        <p>Calle Goles 7, Sevilla</p>
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button color="primary">
+          <ion-icon ios="ios-people" md="md-people"></ion-icon>
+          Passengers
+        </button>
+        <button ion-button color="secondary">
+          <ion-icon name="call"></ion-icon>
+          JoinUp
+        </button>
+      </ion-item-options>
+      <ion-item-options side="right">
+        <button ion-button color="primary">
+          <ion-icon name="pin"></ion-icon>
+          Recogida
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item (click)="buttonClick()">
+        <h2>EADS Barcelona</h2>
+        <h3>Janssen</h3>
+        <p>Calle Goles 7, Sevilla</p>
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button color="primary">
+          <ion-icon ios="ios-people" md="md-people"></ion-icon>
+          Passengers
+        </button>
+        <button ion-button color="secondary">
+          <ion-icon name="call"></ion-icon>
+          JoinUp
+        </button>
+      </ion-item-options>
+      <ion-item-options side="right">
+        <button ion-button color="primary">
+          <ion-icon name="pin"></ion-icon>
+          Recogida
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+
+    <ion-item-sliding>
+      <ion-item (click)="buttonClick()">
+        <h2>EADS Barcelona</h2>
+        <h3>Janssen</h3>
+        <p>Calle Goles 7, Sevilla</p>
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button color="primary">
+          <ion-icon ios="ios-people" md="md-people"></ion-icon>
+          Passengers
+        </button>
+        <button ion-button color="secondary">
+          <ion-icon name="call"></ion-icon>
+          JoinUp
+        </button>
+      </ion-item-options>
+      <ion-item-options side="right">
+        <button ion-button color="primary">
+          <ion-icon name="pin"></ion-icon>
+          Recogida
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+
+    <ion-item-sliding>
+      <ion-item (click)="buttonClick()">
+        <h2>EADS Barcelona</h2>
+        <h3>Janssen</h3>
+        <p>Calle Goles 7, Sevilla</p>
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button color="primary">
+          <ion-icon ios="ios-people" md="md-people"></ion-icon>
+          Passengers
+        </button>
+        <button ion-button color="secondary">
+          <ion-icon name="call"></ion-icon>
+          JoinUp
+        </button>
+      </ion-item-options>
+      <ion-item-options side="right">
+        <button ion-button color="primary">
+          <ion-icon name="pin"></ion-icon>
+          Recogida
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+  </ion-list>
+
+
+</ion-content>
